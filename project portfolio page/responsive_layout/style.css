@@ -1,0 +1,262 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 25vh 6fr 3rem;
+    grid-gap: 0px;
+    margin: auto 0;
+    background-color: rgba(0,50,50,0.9);
+
+}
+.header-list{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    padding: 0;
+    font-family: impact, futura;
+    text-shadow: 2px 2px 9px rgba(0,0,0,0.9); 
+    text-transform: capitalize;
+}
+li{
+    padding-right: 17px;
+    padding-left: 17px;
+}
+a{
+    color: rgba(250,250,250,0.5);
+    text-decoration: none;
+}
+.push{
+    margin-left: auto;
+}
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid rgba(0.0.0.1);
+    transition: all 0.3s linear;
+}
+
+.black:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 115px, inset rgba(0,0,0,0.15) 0px -10px 190px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *   NAVIGATION BAR
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(25,100,100,0.5) 0%, rgba(25,100,100,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(25,100,100,1) 0%,rgba(25,100,100,0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  COVER
+ **********************************************************************/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(250,250,250,0.5);
+    font-size: 5em;
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.5)
+
+}
+
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0,180,200,0.7) 0%, rgba(0,180,200,0.5) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,108,120,0.8) 0%,rgba(0,118,140,0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+.cover {
+    height: 90%;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+/***********************************************************************
+ *                          FOOTER
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(25,100,100,1) 0%,rgba(25,100,100,0.5) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: rgba(250,250,250,0.5);
+    padding: 4%;
+
+}
+
+/***********************************************************************
+ *                     BLACK WITH BLUE TILE GRID
+ **********************************************************************/
+.blue{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 0.7em;
+    padding: 0.5em;
+    border: rgba(0,0,0,0);
+}
+
+/*  GRID WRAPPER */
+
+
+/*  BLUE TILES */
+.black{
+    background: rgba(0,0,0,1);
+    /*background: -webkit-linear-gradient(top, rgba(0,200,200,0.5) 0%,rgba(0,200,200,0.7) 44%,rgba(0,200,200,1) 100%); /* Chrome10+,Safari5.1+ */
+    padding: 0em;
+    border: 1px solid rgba(250,250,250,0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    
+    max-width: 100%;
+}
+
+/****************************************
+            MEDIA QUERIES
+****************************************/
+
+@media only screen and (max-width: 700px) {
+    .green {
+        font-size: 0.9em;
+        padding: 0;
+    }
+    .red {
+        height: 15rem;
+        margin-bottom: 1%
+    }
+    .blue {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .green {
+        font-size: 0.7em;
+        padding: 0;
+    }
+    .red {
+        height: 12rem;
+        margin-bottom: 1%
+    }
+    .blue {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .blue {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        grid-gap: 0.8em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+    .red {
+        height: 35vh;
+        margin-bottom: 1px;
+           }
+    .green {
+        font-size: 20px;
+    }
+    .yellow {
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .blue {
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+        grid-gap: 0.8em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+    .red {
+        height: 50vh;
+        margin-bottom: 1px;
+           }
+    .green {
+        font-size: 20px;
+    }
+    .yellow {
+        padding: 2%;
+    }
+}
+
+@media only screen and (max-height: 670px) and (max-width: 1000px) {
+    .blue {
+        margin-top: 23%;
+    }
+    .red {
+        height: 40vh;
+}
+@media only screen and (max-height: 450px) and (min-width: 900px) {
+    .blue {
+        margin-top: 37%;
+    }
+    .red {
+        height: 100vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
