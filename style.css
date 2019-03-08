@@ -1,0 +1,294 @@
+
+/******************************************
+
+
+				BACKGROUND
+
+
+*****************************************/
+
+
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+#background_video {
+	position: fixed;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	min-height: 100%;
+	min-width: 100%
+	width:auto;
+	height: auto;
+	z-index: 1;
+}
+#video_container {
+	position:fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+#filter {
+	position: fixed;
+	background: rgba(50,0,0,0.8);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+}
+/******************************************************************************************
+
+										navigation
+
+*******************************************************************************************/
+
+#navbar {
+	display: grid;
+	position: fixed;
+	top: 0;
+	background-image: linear-gradient(rgba(20,20,20,1), rgba(30,30,30,1), rgba(40,40,40,1), rgba(50,50,50,1), rgba(60,60,60,1), rgba(70,70,70,1), rgba(60,60,60,1), rgba(50,50,50,1), rgba(40,40,40,1), rgba(30,30,30,1), rgba(20,20,20,1));
+	width: 100vw;
+	height: .5%;
+	padding: 15px;
+	box-shadow: -5px 10px 50px rgba(0,0,0,0.7);
+	border-bottom: 2px solid rgba(0,0,0,0.7);
+	z-index: 100;
+}
+#foot_bar {
+	display: grid;
+	position: fixed;
+	bottom: 0;
+	background-image: linear-gradient(rgba(50,50,50,1), rgba(60,60,60,1), rgba(70,70,70,1), rgba(60,60,60,1), rgba(50,50,50,1), rgba(40,40,40,1), rgba(30,30,30,1), rgba(20,20,20,1));
+	width: 100vw;
+	height: .5%;
+	padding: 15px;
+	box-shadow: -5px 0px 100px;
+	border-top: 2px solid rgba(0,0,0,0.5);
+	z-index: 101;
+}
+#nav_text{
+	background: rgba(100,100,100,0.5);
+	color: rgba(200,200,200,0.7);
+	text-align: ;
+	font-size: 5em;
+	text-shadow: 1px 1px 30px black;
+	
+	margin-left: 4%;
+	border:  2px solid rgba(100,100,100,0.5);
+	border-radius: 50% 50%;
+	width: 150px
+}
+#slogan {
+	margin-top: -80px;
+	margin-left: 350px;
+	width: 70px;
+	height: 40px;
+	text-align: center;
+	font-size: 20px;
+	background-image: ;
+	background: rgba(200,200,200,0.5);
+	border: 1px solid rgba(100,100,100,0.5);
+	border-radius: 50%;
+	color: rgba(200,200,200,0.5);
+	text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+#foot_text {
+	color: rgba(200,200,200,0.7);
+	text-decoration: none;
+	text-align: center;
+	font-size: 3em;
+	text-shadow: 1px 1px 10px black;
+	margin-top: -1em;
+}
+
+/******************************************
+
+
+				intro
+
+
+*****************************************/
+#intro {
+	display: grid;
+	position: fixed;
+	z-index: 110;
+	margin-left: 40%;
+	grid-gap: 10%;
+
+}
+#box1 {
+	margin-left: 15%;
+	margin-right: 10%;
+}
+#box2 {
+	margin-left: 25%;
+	margin-right: 18%;
+}
+.intro_text {
+	display: grid;
+	text-align: center;
+	border: 2px solid rgba(100,100,100,0.5);
+	border-radius: 15px 15px;
+	padding: 10px;
+	color: rgba(150,150,150,0.9);
+	background-image: linear-gradient( rgba(10,10,10,0.5), rgba(100,100,100,0.5));
+	height: auto;
+	width: auto;
+	box-shadow: 0px 0px 50px rgba(0,0,0,0.9);
+}
+
+
+#demo_video {
+	max-width: 100%;
+	min-width: 100%;
+	border: 1.5px solid rgba(10,10,10,0.8);
+	box-shadow: 0px 0px 100px rgba(0,0,0,1);
+}
+
+/******************************************
+
+
+				tiles
+
+
+*****************************************/
+
+#projects {
+	display: grid;
+    grid-template-columns: .4fr;
+    grid-auto-rows: auto;
+    grid-row-gap: 2em;
+    z-index: 98;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+
+  
+}
+
+/*  image container  */
+
+.project-tile {
+	transition: all .4s ease-in-out;
+    display: grid;
+    align-items: center;
+}
+
+.project-tile:hover {
+	transform: scale(1.1);
+}
+
+.tile-img {
+	max-width: 90%;
+	border: 1px solid rgba(100,100,100,0.5);
+	border-radius: 5px 5px;
+	padding: 30px;
+	background-image: linear-gradient( rgba(10,10,10,0.5), rgba(100,100,100,0.5));
+	box-shadow: 0px 0px 100px rgba(0,0,0,1);
+
+}
+/****************************************
+
+				contact page
+
+*****************************************/
+
+#demo_container {
+	display: grid;
+	position: fixed;
+	z-index: 103;
+	margin-left: 50vw;
+}
+#demo_tile {
+	border: 1px solid rgba(100,100,100,0.8);
+	padding: 50px;
+	background-image: linear-gradient( rgba(50,50,50,0.4), rgba(100,100,100,0.4), rgba(10,10,10,0.4));
+	border-radius: 5px 5px;
+	box-shadow: 0px 0px 100px rgba(0,0,0,1);
+	margin-top: 15vh;
+	margin-bottom: 10%;
+	margin-right: 15%;
+}
+#demo_text{	
+	color:  rgba(200,200,200,0.3);
+	text-align: center;
+	font-size: 2em;
+	text-shadow: 1px 0px 10px rgba(0,0,0,1);
+	margin-top: -15px;
+
+}
+#demo_video {
+	box-shadow: 0px 0px 50px;
+
+
+}
+
+/***************************************/
+
+#contact_page {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.info {
+	display: grid;
+	position: fixed;
+	z-index: 102;
+	padding: 10px;
+	color: rgba(150,150,150,0.9);
+	border: 1px solid rgba(100,100,100,0.5);
+	border-radius: 10px 10px;
+	text-align: center;
+	background-image: linear-gradient( rgba(10,10,10,0.4), rgba(100,100,100,0.4));
+	box-shadow: 0px 0px 100px rgba(0,0,0,1);
+}
+.infoL {
+	transition: all .4s ease-in-out;
+}
+.infoL:hover {
+	transform: scale(1.9);
+}
+#linkedIn {
+	margin-top: 42vh;
+	margin-left: 19vw;
+}
+  #linkedIn:hover{
+
+  }
+
+#email {
+	margin-top: 15vh;
+	margin-left: 13vw;
+}
+#phone {
+	margin-top: 30vh;
+	margin-left: 15vw;
+}
+#github {
+	margin-top: 50vh;
+	margin-left: 25vh;
+}
+a {
+	color: rgba(250,250,250,0.6);
+	text-shadow: 0px 1px 10px rgba(0,0,0,0.9);
+	text-decoration: none;
+}
+
+
+
+
+/******************************************************************************************
+
+										animate.css
+
+*******************************************************************************************/
+
+
+
+
+
+

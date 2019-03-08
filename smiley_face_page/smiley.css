@@ -1,0 +1,194 @@
+
+
+
+/* MAIN CONTAINER */
+body{
+  background: rgba(250,200,0);
+  margin-left: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+/* MAIN NAVBAR RULES */
+#nav-bar{
+  border: 1px solid rgba(250,200,0,0.6);
+  background: rgba(0,0,0,0.8);
+  padding: 5px;
+  box-shadow: 10px 10px 55px rgba(0,0,0,1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* LOGO IMAGE */
+#header-img{
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+  max-width: 4em;
+  border-radius: 50%;
+  margin-left: 0px;
+}
+
+/* NAVBAR TITLE */
+h1{
+  color: rgba(250,200,0,0.7);
+  font-size: 25px;
+  text-shadow: 3px 3px 10px rgba(0,0,0,1);
+  position: relative;
+  font-family: Luminari;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-right: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  border: 2px solid rgba(250,230,0,0.5);
+  box-shadow: 7px 7px 20px rgba(0,0,0,0.5);
+  height: 20px;
+  width: 135px;
+  border-radius: 10px;
+}
+
+/* ACTUAL NAV BUTTONS */
+.nav-link{
+  font-size: 20px;
+  font-family: Rockwell, Papyrus, Trattatello;
+  text-decoration: none;
+  color: rgba(250,220,0,0.6);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+}
+/* END OF NAVBAR RULES */
+
+
+
+/* THE TOP VIDEO */
+#video-two{
+  border: 5px solid black;
+  box-shadow: 10px 10px 70px 10px;
+  margin-top: 5%;
+  margin-left: 1.5%;
+  margin-right: 2%;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+/* SECOND VIDEO */
+#video{
+  margin-top: 3px;
+  margin-left: 27%;
+  margin-right: 8%;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+}
+
+/* NON EXISTANT! */
+h2{
+  margin-left:;
+  font-size: 100%;
+}
+
+/* GENERAL PARAGRAPH RULES */
+p{
+  color: rgba(0,0,0,0.7);
+  border: 1px solid;
+  /*text-shadow: 1px 1px 0px rgba(0,0,0,0.9);*/
+  margin-top: 2%;
+  font-size: 16px;
+  background: rgba(220,200,0,0.7);
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 2px 5px 35px rgba(0,0,0,0.8);
+  max-width: 85%;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+/* PARAGRAPHS 3,5 */
+p + p{
+  margin-left: 5%;
+  margin-right: 15%;
+}
+
+/* PARAGRAPH 4 */
+#video + p{
+  margin-right: 6%;
+  margin-left: 20%;
+}
+
+/* PARAGRAPH 1 */
+#video-two + p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* FIRST FULL SIZE PIC */
+#pic-three{
+  width: 230px;
+  float: right;
+  box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  border: 0px solid black;
+}
+
+/* BOTTOM PIC (WINKING) */
+#pic-two{
+  float: left;
+  width: 300px;
+  box-shadow: 11px 11px 25px rgba(0,0,0,0.5);
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-bottom: 4%;
+  border: 2px solid black;
+}
+
+/* EMAIL LIST SIGN UP */
+#mc_embed_signup {
+  left: 300px;
+}
+
+/*#form{
+ 
+
+}*/
+
+/* DUH! */
+footer{
+  color: rgba(0,0,0,0.5);
+  border: 2px solid;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.9);
+  margin-left: 27%;
+  margin-right: 21%;
+  margin-top: 5%;
+  font-size: 16px;
+  background: rgba(220,200,0,0.7);
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 2px 5px 35px rgba(0,0,0,0.8);
+  width: 60%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px){
+
+.nav-link{
+  font-size: 10px;
+}
+#form{
+  
+}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+  <style>
+        form {
+        background-color: rgba(25,150,0,0.5);
+        }
+        footer {
+        background-color: rgba(155,30,100,0.4);
+        }
+        h1 {
+        background-color: rgba(155,30,100,0.4);
+        }
+      </style>
+    <head>
+      <title>Register</title>
+    </head>
+    <body>
+      
+      <center><h1>Fake join today and have fun selecting meats and fruits,<br> for no real reason at all!</h1></center>
+      <!--Use GET, not POST-->
+      
+      <form method="GET">
+        First Name:<br> <input type="text" name="firstname" placeholder="Mr"required><br>
+        Last Name:<br> <input type="text" name="lastname" placeholder="Smith" required><br>
+        Email:<br> <input type="email" name="email" placeholder="matrix@example.com" required><br>
+        Password:<br> <input type="password" name="password" placeholder="minimum 5 digits" min="5" required><br>
+        Birthday:<br><input type="date" name="birthday" placeholder="mm/dd/yyyy" required><br>
+        Gender:<br>
+        <input type="radio" name="gender" value="male">Male<br>
+        <input type="radio" name="gender" value="female">Female<br>
+        <input type="radio" name="gender" value="both">Both<br>
+        <input type="radio" name="gender" value="other">Other<br>
+        Pets:<br><input type="checkbox" name="pet" value="pet">Cat<br>
+        <input type="checkbox" name="pet" value="pet">Dog<br>
+        <input type="checkbox" name="pet" value="pet">Alf<br>
+        Favorite meal of the day: 
+        <select name="meals">
+          <option value="breakfast" name="breakfast">breakfast</option>
+          <option value="lunch" name="lunch">Lunch</option>
+          <option value="dinner" name="dinner">Dinner</option>
+        </select><br>
+        <input type="submit" value="Register!" name="register">
+        <input type="reset" name="reset">
+      </form>
+      <center>
+      <footer><br>
+        <strong>back to</strong> <a href="newpage.html"> "meat page"</a><br><br>
+        <strong>back to </strong><a href="indexfruit.html"> "fruit page"</a><br><br>
+      </footer>
+      </center>
+    </body>
+</html>
